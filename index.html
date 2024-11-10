@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                LightButtonGreen: 'rgba(171, 239, 95, 0.5);',
+              }
+            }
+          }
+        }
+      </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Italianno&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+      <style>
+        .manrope{
+            font-family: Manrope;
+        }
+      </style>
+    
+
+</head>
+<body class="manrope">
+   <header>
+    <nav class="container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg -rotate-90 bg-[#ABEF5F] rounded-full p-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
+                  </svg>
+                  
+                <a class="btn btn-ghost text-xl font-extrabold">Rinterio</a>
+              </div>
+            <div class="navbar-center">
+                <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow hidden sm:contents">
+                <li><a class="text-neutral-700 font-bold">Homepage</a></li>
+                <li><a class="text-neutral-500 font-normal">Services</a></li>
+                <li><a class="text-neutral-500 font-normal">Portfolio</a></li>
+                <li><a class="text-neutral-500 font-normal">Blogs</a></li>
+                <li><a class="text-neutral-500 font-normal">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <div class=" md: contents">
+                    <button class="btn btn-ghost btn-circle">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="h-5 w-5"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                      </button>
+                      <button class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>                  
+                      </button>
+                </div>
+              <button class="btn rounded-full bg-[#ABEF5F] font-extrabold">Book Consult<span class=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg -rotate-90 bg-black rounded-full p-1 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
+              </svg></span></button>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg-white rounded-full  md:hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                      </svg>                      
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow md:hidden">
+                  <li><a>Homepage</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </nav>
+    <!-- banner -->
+     <section>
+      <div class="card bg-base-100 container mx-auto shadow-xl">
+        <figure class="px-10 pt-10">
+          <img
+            src="./assets/banner.png"
+            alt="Shoes"
+            class="rounded-xl" />
+        </figure>
+        <div class="card-body items-center text-center">
+          <h2 class="card-title font-extrabold text-6xl">A barn house of this design has a striking appearance!</h2>
+          <p class="font-medium text-base my-7 text-[#494949] md:mx-48 sm:mx-16">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+          <div class="card-actions">
+            <button class="btn rounded-full bg-LightButtonGreen  border border-[#ABEF5F] font-extrabold text-xl ">View Details<span class=""><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 bg -rotate-90 bg-[#ABEF5F]  rounded-full p-1 text-black">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
+            </svg></span></button>
+          </div>
+        </div>
+      </div>
+     </section>
+   </header>
+      
+
+</body>
+</html>
