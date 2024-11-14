@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rintero</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -232,7 +232,7 @@
         <p class="font-medium text-[#737373] text-base  text-center mb-4">The barn house captivates with its blend of rustic charm and modern sophistication,<br>featuring weathered wood, sleek metal accents.</p>
       </div>
       <div class="container mx-auto grid grid-cols-1 gap-6  sm:grid-cols-2  md:grid-cols-4 "><!-- All the cards -->
-       <div class=" sm:grid-col-span-2 "><!-- card type -1 -->
+       <div class="col-span-2 order-1 sm:col-span-3 "><!-- card type -1 -->
         <div class="flex flex-col items-center gap-6 p-6 rounded-2xl justify-center  sm:flex-row  justify-between">
           <figure class="flex-1 w-full"><img class="w-full" src="./assets/img1.png" alt=""></figure>
           <div class="flex items-start flex-col flex-1">
@@ -246,17 +246,22 @@
           </div>
         </div>
        </div>
-       <div><!-- card type -2 -->
+       <div class="p-6 flex items-center order-2 col-span-2 sm:col-span-1"><!-- card type -2 -->
           <figure class="w-full">
           <img class="w-full" src="./assets/img2.png" alt="">
           </figure>
        </div>
-       <div><!-- card type -3 -->
+       <div class="p-6 flex items-center col-span-3 order-3 md:hidden sm:col-span-2 md:col-span-1"><!-- ex-card type -3 -->
+        <figure class="w-full">
+          <img class="w-full" src="./assets/img5.png" alt="">
+        </figure>
+       </div>
+       <div class="p-6 flex items-center order-5  col-span-2 sm:col-span-1 md:order-3"><!-- card type -4 -->
         <figure class="w-full">
           <img class="w-full" src="./assets/img3.png" alt="">
         </figure>
        </div>
-       <div class=" sm:grid col-span-2 "><!-- card type -4 -->
+       <div class=" grid col-span-2 order-4 md:col-span-2 sm:col-span-3  "><!-- card type -5 -->
         <div class="flex justify-center flex-col items-center gap-6 p-6 rounded-2xl  sm:flex-row justify-between">
           <figure class="flex-1 w-full"><img class="w-full" src="./assets/img4.png" alt=""></figure>
           <div class="flex items-start flex-col flex-1">
@@ -270,9 +275,9 @@
           </div>
         </div>
        </div>
-       <div><!-- card type -5 -->
-        <figure class="full">
-          <img class="full" src="./assets/img5.png" alt="">
+       <div class="p-6 flex items-center col-span-2 order-6 md:order-5 sm:col-span-1 "><!-- card type -6 -->
+        <figure class="w-full">
+          <img class="w-full" src="./assets/img5.png" alt="">
         </figure>
        </div>
       </div>
